@@ -1,0 +1,26 @@
+{
+  "name": "token-transfer-svm",
+  "version": "1.0.0",
+  "description": "script to transfer token on svm",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "batch-transfer": "ts-node src/transfer-batch/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.98.0",
+    "base64-js": "^1.5.1",
+    "bs58": "^6.0.0",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
